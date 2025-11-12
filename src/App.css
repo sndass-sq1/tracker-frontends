@@ -1,0 +1,614 @@
+/**
+ * Login Styles Starts
+ *
+ * @format
+ */
+
+.registration-container::after,
+.registration-container::before {
+  content: "";
+  background: var(--main-color);
+  width: 150px;
+  border-radius: 50%;
+  height: 150px;
+  filter: blur(120px);
+  z-index: -1 !important;
+}
+
+.registration-container::after {
+  position: absolute;
+  top: 0;
+  left: 40%;
+}
+
+.registration-container::before {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.test {
+  font: 700 14px/24px var(--font-family);
+}
+
+.err-label {
+  text-align: start;
+  color: #f06d6d;
+  font: 400 12px/22px var(--font-family);
+  display: block;
+}
+
+.login-form {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  overflow: auto;
+}
+
+.login-form-card {
+  width: 70%;
+  border-radius: 40px;
+  box-shadow: 0px 5px 18px 0px #28293d12;
+  text-align: center;
+  padding: 30px 90px;
+
+  p {
+    font: 400 16px/22px var(--font-family);
+  }
+}
+
+.form-modal {
+  width: 100%;
+  box-shadow: none;
+  padding: 20px 30px;
+
+  .primary-btn {
+    display: flex;
+    gap: 20px;
+  }
+
+  .login-title {
+    font-size: 22px;
+    margin-bottom: 15px;
+    text-align: left;
+    color: var(--bs-dark);
+  }
+
+  input.form-control {
+    height: 52px !important;
+    min-height: inherit;
+  }
+
+  .form-floating>label {
+    padding: 12px 0.75rem;
+  }
+}
+
+.logo {
+  height: 50px;
+}
+
+.pwd-eye {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  font-size: 18px;
+  color: var(--btn-close-color);
+}
+
+.login-title {
+  margin-bottom: 66px;
+  font: 700 32px/40px var(--font-family);
+  color: var(--main-color);
+}
+
+.primary-btn button {
+  width: 100%;
+  height: 46px;
+  border-radius: 8px;
+  font: 500 16px/17px var(--font-family);
+  box-shadow: none;
+  outline: none;
+}
+
+.submit-btn {
+  background-color: var(--main-color);
+  border: 1px solid var(--main-color);
+  color: var(--white);
+}
+
+.outline-btn {
+  color: #333333;
+  background-color: var(--white);
+  border: 1px solid #4f4f4f;
+}
+
+.primary-btn .submit-btn:hover {
+  background-color: var(--main-color);
+  border: 1px solid var(--main-color);
+}
+
+:hover.primary-btn .submit-btn:hover {
+  background-color: #aff1ea;
+  border: 1px solid var(--main-color);
+}
+
+.primary-btn button.width-120 {
+  width: 120px;
+  height: 40px;
+}
+
+.border-none {
+  border: none;
+  background-color: inherit;
+}
+
+.primary-btn button.width-120.width-140 {
+  width: 140px;
+}
+
+.hyper-link {
+  font: 600 18px/22px var(--font-family) !important;
+  color: var(--main-color);
+  cursor: pointer;
+}
+
+.login-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.login-left {
+  min-width: calc(50vw - 7px);
+  height: 98vh;
+  background: url("/images/login/loginleftbg.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 7px;
+}
+
+.login-content p {
+  font: 400 20px/24px var(--font-family);
+  color: #b1b1b1;
+  text-align: center;
+}
+
+/* .zoho-login {
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background-color:;
+  width: 100%;
+}
+
+.zoho-login:hover {
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+} */
+
+.zoho-mail {
+  width: 28px;
+  height: 28px;
+}
+
+.zoho-link {
+  font: 400 16px/24px var(--font-family);
+  text-decoration: none;
+}
+
+.slide-contains {
+  width: 350px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+.slide-asset {
+  width: 70%;
+  height: 70%;
+  object-fit: fill;
+}
+
+.slide-contains p {
+  width: 230px;
+  height: 150px;
+  text-align: center;
+  font: 500 18px/24px var(--font-family) !important;
+  margin-top: 10px;
+}
+
+.slide-contains h4 {
+  font: 400 22px/24px var(--font-family) !important;
+  color: var(--main-color);
+}
+
+.slide-contains span {
+  color: var(--main-color);
+}
+
+.vertex {
+  border: 1px solid grey;
+  width: 30%;
+}
+
+.pro-logo img {
+  width: 80px;
+  height: 46px;
+}
+
+.right-login {
+  width: 40%;
+}
+
+.forgot-pass a {
+  color: rgb(51, 182, 242);
+  font: 500 16px/24px var(--font-family);
+}
+
+/* Login Styles ends */
+.login-form .input::placeholder {
+  font: 500 14px/18px var(--font-family);
+  color: rgba(121, 118, 145, 0.4);
+  background-color: #d4d7e3;
+}
+
+.login-form .form-control {
+  background-color: rgba(247, 251, 255, 1);
+  color: rgba(136, 151, 173, 1);
+  font: 500 16px/18px var(--font-family);
+  height: 56px !important;
+  border-radius: 8px;
+  border: 1px solid var(--white);
+  outline: none;
+  padding-left: 20px;
+  padding-right: 12px;
+}
+
+.login-form .form-control:focus {
+  color: var(--bs-body-color);
+  background-color: white;
+  border-color: var(--main-color);
+  outline: 0;
+  box-shadow: 0 0 0 1px rgb(36, 200, 181);
+}
+
+.tracker-modal .modal-header {
+  border: none;
+}
+
+.tracker-modal img {
+  width: 74px;
+}
+
+.tracker-modal .modal-title {
+  font: 800 22px/22px var(--font-family-GB);
+  color: rgb(32, 32, 32);
+}
+
+/* .logout-para {
+  width: 68%;
+  margin: auto;
+  text-align: center;
+  font: 500 17px/20px var(--font-family-GM);
+  color: rgba(20, 20, 20, 0.302);
+} */
+
+.tracker-modal .modal-body {
+  padding: 0 10px 30px 10px;
+}
+
+.tracker-modal .btn-close {
+  --bs-btn-close-focus-shadow: 0 0 0 1px rgb(36, 200, 181);
+}
+
+/* .cancel-btn {
+  padding: 9px 38px;
+  background-color: inherit;
+  color: #000000;
+  border: 1px solid rgba(138, 139, 143, 0.2);
+  border-radius: 5px;
+} */
+.approve-btn {
+  padding: 9px 30px !important;
+  border-radius: 5px !important;
+  width: 130px !important;
+  height: 44px !important;
+}
+
+.cancel-btn:hover {
+  background-color: rgb(124, 122, 122);
+  color: #ffffff;
+  border: 1px solid rgba(138, 139, 143, 0.2);
+}
+
+.tracker-modal .cancel-btn:hover {
+  padding: 9px 38px;
+  background-color: inherit;
+  color: #000000;
+  border: 1px solid rgba(138, 139, 143, 0.2);
+}
+
+.logout-btn {
+  padding: 9px 38px;
+  background-color: rgb(248, 101, 93);
+  color: rgb(255, 255, 255);
+  border: inherit;
+  border-radius: 5px;
+}
+
+.logout-btn:hover {
+  background-color: rgb(255, 59, 48);
+  color: rgb(255, 255, 255);
+  border: inherit;
+}
+
+.tracker-modal .logout-btn:hover {
+  padding: 9px 38px;
+  background-color: rgb(255, 59, 48);
+  color: rgb(255, 255, 255);
+  border: inherit;
+}
+
+.client-logo img {
+  width: 21px;
+  height: 21px;
+}
+
+.client-logo {
+  padding: 8px;
+  border: inherit;
+  background-color: #faf6f6;
+  border-radius: 14px;
+  height: 44px;
+  min-width: 54px;
+}
+
+.nav-time {
+  font: 400 14px/16px var(--font-family-GSB);
+}
+
+.react-tabs__tab:focus {
+  outline: none;
+}
+
+.react-tabs__tab--selected {
+  background: #fff;
+  border-color: #aaa;
+  color: black;
+  border-radius: 5px 5px 0 0;
+}
+
+.react-tabs__tab {
+  display: inline-block;
+  border: 1px solid transparent;
+  border-bottom: none;
+  bottom: -1px;
+  position: relative;
+  list-style: none;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.react-tabs__tab-list {
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+.timeframe-filter {
+  line-height: 30px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.timeframe-filter img {
+  width: 20px;
+}
+
+.ul-divider {
+  height: 140px;
+  width: 0%;
+  background-color: #cbcacf;
+  border-radius: 2px;
+  padding: 1px;
+}
+
+.advanc-filter {
+  line-height: 27px;
+}
+
+.custom-tabfilter {
+  padding: 10px;
+}
+
+.custom-tabinside li {
+  font: 400 17px/28px var(--font-family);
+}
+
+.time-frame-para {
+  font: 600 16px / 22px var(--font-family-GB);
+  /* search highlight */
+}
+
+/* .bg-high-ligher {
+  background: #ffff74;
+} */
+
+
+
+.team-btn {
+  color: white;
+  background-color: var(--main-color);
+  border: 1px solid var(--main-color);
+  border-radius: 5px;
+  text-align: center !important;
+  line-height: 24px;
+  min-width: 26px;
+  display: inline-block;
+  padding: 0 5px;
+  font-weight: normal;
+  font-size: 15px;
+  align-items: center;
+  font-size: 16px;
+  padding: 3px 8px;
+}
+
+.cus-subcount {
+  color: red;
+  background-color: rgba(234, 68, 68, 0.1);
+  border: 1px solid rgba(234, 68, 68, 0.1);
+  border-radius: 5px;
+}
+
+.email-logo {
+  font-size: 24px;
+}
+
+/* .bi-edit,
+.bi-save {
+  color: var(--main-color);
+}
+
+.bi-delete,
+.bi-cancel {
+  color: red;
+}
+
+.bi-login {
+  color: rgb(253, 1, 254);
+}
+
+.bi-view {
+  color: rgb(58, 117, 206);
+} */
+
+.main-filter .css-tr4s17-option {
+  display: block;
+  width: 100%;
+  background-color: var(--main-color) !important;
+  color: hsl(0, 0%, 100%);
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.main-filter .css-qr46ko {
+  max-height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* position: fixed; */
+  background: rgb(255, 255, 255);
+  padding: 0 0 4px 0 !important;
+  width: 165px;
+  cursor: pointer;
+  border: 1px solid var(--white);
+}
+
+.main-filter .css-1nmdiq5-menu {
+  top: 100%;
+  position: absolute;
+  width: 165px !important;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  cursor: pointer;
+  overflow-x: hidden;
+}
+
+.main-filter .css-t3ipsp-control {
+  border-color: var(--main-color);
+  box-shadow: none;
+  cursor: pointer;
+  border-radius: 8px;
+  z-index: +9999;
+}
+
+.main-filter .css-t3ipsp-control:hover {
+  border-color: var(--main-color);
+  cursor: pointer;
+}
+
+.main-filter .css-d7l1ni-option:hover,
+.main-filter .css-d7l1ni-option {
+  background-color: var(--hover-color) !important;
+  cursor: pointer;
+}
+
+.main-filter .css-13cymwt-control {
+  cursor: pointer;
+  border-radius: 8px;
+  width: 165px;
+}
+
+.main-filter .css-t3ipsp-control {
+  width: 165px;
+}
+
+.font-header {
+  font: 500 18px/24px var(--font-family);
+}
+
+.remove-audit .form-check-input:checked {
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+}
+
+.remove-audit .form-check-input:focus {
+  border-color: var(--main-color);
+  outline: 0;
+  box-shadow: inherit;
+}
+
+.modal-scroll {
+  overflow: auto;
+  max-height: 300px;
+}
+
+.sub-card .card-body {
+  padding: 0;
+}
+
+/* .custom-inputborder {
+  border-color: #63606094 !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+}
+
+.css-4cjcmy-control {
+  border-color: #63606094 !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+} */
+
+.guide-loader {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: 250px;
+}
+
+.css-19bux1v-control {
+  border-color: #63606094 !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+}
+
+/* .css-21i1w4-control {
+  border-radius: 10px !important;
+  border-color: #33B1FF !important;
+  box-shadow: none !important;
+  min-height: 38px !important;
+  font-size: 13px !important;
+  position: static !important;
+}
+
+.css-b62m3t-container {
+  position: static !important;
+  background: transparent !important;
+  min-width: 160px;
+} */
